@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import './Header.css';
 import MenuOptions from "./MenuOptions/MenuOptions";
+import Logo from '../Images/GOAT_logo.svg';
 
 function Header() {
     const [isMenu, setIsMenu]=useState(true);
@@ -25,7 +26,7 @@ function Header() {
         <>
             <div id="header">
                 <div id="logo">
-                    (대충GOAT로고)
+                    <img src={Logo} />
                 </div>
                 <div id="home-menu-button" onClick={onToggleMenu} ref={homeMenuButtonRef}>
                     <div className={`menu-button ${isMenu ? "" : " menu-btn-hidden"}`}>
