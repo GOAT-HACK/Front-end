@@ -87,20 +87,10 @@ export const sideDiv = styled.div`
   align-items: center;
 `;
 
+const createborder = keyframes`
+`;
+
 export const electronics = styled.img`
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
-`;
-
-const attchLine = keyframes`
-    from {
-        width: 0px;
-    }
-    to {
-        
-    }
-`;
-
-export const connctLine = styled.div`
-
 `;

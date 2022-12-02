@@ -165,7 +165,8 @@ export const detInfo = styled.div`
   align-items: center;
 
   &:hover {
-    transition-duration: 0.2s;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-in-out;
     background-size: 100%;
     background-position: 50%;
     ${coninfo} {
