@@ -37,17 +37,29 @@ export const LOGO = styled.img`
   background-size: cover;
 `;
 
+const createborder = keyframes`
+
+to {
+  border: 8px solid #87ff9d;
+  box-shadow: 0px 0px 50px #87ff9d;
+  border-radius: 5px;
+}
+`;
+
 export const energy = styled.div`
   position: relative;
   display: flex;
-  width: 200px;
-  height: 350px;
+  width: 300px;
+  height: 525px;
   background-color: #2e2e2e;
   border-radius: 0.5rem;
   overflow: hidden;
   z-index: 2;
   justify-content: center;
+  margin-top: 4rem;
   align-items: center;
+  animation: ${createborder} 2s 1 ease-out;
+  animation-fill-mode: forwards;
 `;
 
 const rotate = keyframes`
@@ -61,7 +73,7 @@ export const amountWave = styled.div`
   top: ${(props) => props.top}%;
   left: ${(props) => props.left}%;
   animation: ${rotate} ${(props) => props.duSec}s infinite linear;
-  border-radius: 37.5%;
+  border-radius: 35%;
   width: 600px;
   height: 600px;
   background-color: #7fffbf;
@@ -78,6 +90,7 @@ export const simpleDesc = styled.div`
 `;
 
 export const sideDiv = styled.div`
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -90,17 +103,6 @@ export const sideDiv = styled.div`
 export const electronics = styled.img`
   width: ${(props) => props.width}px;
   height: ${(props) => props.height}px;
-`;
-
-const attchLine = keyframes`
-    from {
-        width: 0px;
-    }
-    to {
-        
-    }
-`;
-
-export const connctLine = styled.div`
-
+  animation: ${createborder} 2s 1 ease-out;
+  animation-fill-mode: forwards;
 `;

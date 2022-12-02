@@ -1,21 +1,24 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
+// height: 100vh;
+// width: 100vw;
+// display: flex;
 
+// background-color: black;
 export const container = styled.div`
   height: 100vh;
   width: 100vw;
-  display: grid;
-  grid-template-rows: 103px 1fr;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  column-gap: 30px;
+
   background-color: black;
 `;
 
 export const header = styled.div`
-    grid-column: 1 / 3;
   display: flex;
+  position: fixed;
   top: 0%;
   width: 100%;
   height: 100px;
@@ -24,17 +27,19 @@ export const header = styled.div`
   font-weight: bold;
   color: white;
   align-items: center;
-  justify-content: space-between;
-    padding: 0 20px;
-    box-sizing: border-box;
+  padding-left: 25px;
   border-bottom: 3px solid white;
   text-shadow: 0px 0px 20px white;
   box-shadow: 0px 2px 10px white;
+  margin-bottom: 3rem;
 `;
 
 export const LOGO = styled.img`
+  position: absolute;
+  right: 5%;
   width: 250px;
   height: 100%;
+  background-size: cover;
 `;
 
 const disappInfo = keyframes`
@@ -68,18 +73,25 @@ export const coninfo = styled.div`
 `;
 
 export const baseInfo = styled.div`
-    margin: 0 auto;
   position: relative;
   display: flex;
+  margin-top: 10rem;
+  margin-left: 5rem;
   width: 300px;
   height: 500px;
   background-color: #2e2e2e;
   border-radius: 0.5rem;
+  border: 8px solid #87ff9d;
+  box-shadow: 0px 0px 40px #87ff9d;
   overflow: hidden;
   z-index: 2;
   justify-content: center;
   align-items: center;
+
   &:hover {
+    border: 8px solid #43bb6a;
+    box-shadow: none;
+    transition-duration: 0.5s;
     ${coninfo} {
       opacity: 0.85;
       animation: ${disappInfo} 0.0001 ease-out;
@@ -126,13 +138,12 @@ export const title = styled.div`
 `;
 
 export const infoDiv = styled.div`
-    margin: 0 auto;
-  display: grid;
-  max-width: 870px;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 72px;
-  row-gap: 30px;
+  display: flex;
   flex-wrap: wrap;
+  margin-top: 8rem;
+  margin-left: 4rem;
+  width: 70%;
+  /* background-color: white; */
 `;
 
 export const clickSpan = styled.div`
@@ -143,21 +154,33 @@ export const detInfo = styled.div`
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-left: 7rem;
   width: 400px;
   height: 200px;
-  background-color: #2e2e2e;
+  background: url(${(props) => props.bgImg});
+  background-size: 80%;
+  background-position: 40%;
+  background-repeat: no-repeat;
   border-radius: 0.5rem;
+  border: 3px solid #2e2e2e;
   overflow: hidden;
   z-index: 2;
   justify-content: center;
   align-items: center;
+
   &:hover {
+    transition-duration: 0.35s;
+    transition-timing-function: ease-out;
+    background-size: 100%;
+    background-position: 50%;
     ${coninfo} {
       transition-duration: 0.1s;
       opacity: 0.85;
       background-color: gray;
       cursor: pointer;
     }
+
     ${clickSpan} {
       text-decoration: underline;
     }

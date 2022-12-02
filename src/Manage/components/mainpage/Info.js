@@ -65,7 +65,7 @@ function Info() {
             style={{ textDecoration: "none", width: "100%", height: "100%" }}
           >
             <I.coninfo>
-              누적 발전량
+              에너지 효율
               <br />
               <I.desc>
                 누적 발전량 데이터를 확인 할 수 있습니다.
