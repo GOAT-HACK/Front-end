@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../defaultPage.css';
 import './FourthPage.css';
 
@@ -17,7 +18,7 @@ function FourthPage() {
                 <h2 className={`title last-greet-title1 ${isShowLGT ? "show-lgt" : ""}`} >GOAT에 대해 들어 주셔서</h2>
                 <h3 className={`title last-greet-title2 ${isShowLGT ? "show-lgt" : ""}`} >감사합니다!</h3>
                 <div className="works">
-                    <div id="three" className={`work-titles last-greet-title3 ${isShowLGT ? "show-lgt" : ""}`}>GOAT 시스템 사이트 링크</div>
+                    <Link to="/info" id="three" className={`work-titles last-greet-title3 ${isShowLGT ? "show-lgt" : ""}`}>GOAT 시스템 사이트 링크</Link>
                 </div>
             </div>
         </div>

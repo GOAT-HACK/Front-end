@@ -19,7 +19,7 @@
         height: 500px;
         font-size: 3.3rem;
         color: white;
-        z-index: 2;
+        z-index: 1;
     }
 
         /* options li */
@@ -50,12 +50,17 @@
     background-color: black;
     transition: 0.3s;
     transition-delay: 0.5s;
+    z-index: -1;
 }
 
 /* Hide window / Show options bg class */
 .menu-options-window-hidden{
+    z-index: -1 !important;
     transition-delay: 1s !important;
     transition: 1s;
+}
+.menu-options-window-hidden ul {
+    z-index: 0 !important;
 }
     .menu-options-bg-animation{
         transition: 0.3s !important;
