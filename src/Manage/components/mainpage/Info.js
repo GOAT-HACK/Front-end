@@ -1,5 +1,8 @@
 import * as I from "./InfoStyle";
 import GOAT from "../../Images/GOAT_logo.png";
+import flash from "../../Images/flash.png";
+import gear from "../../Images/gear.png";
+import plug from "../../Images/plug.png";
 import { Link } from "react-router-dom";
 
 function Info() {
@@ -22,8 +25,11 @@ function Info() {
         </I.coninfo>
       </I.baseInfo>
       <I.infoDiv>
-        <Link to="/useElec" style={{ textDecoration: "none" }}>
-          <I.detInfo>
+        <I.detInfo bgImg={gear}>
+          <Link
+            to="/useElec"
+            style={{ textDecoration: "none", width: "100%", height: "100%" }}
+          >
             <I.coninfo>
               전력 사용 기기
               <br />
@@ -34,10 +40,13 @@ function Info() {
                 <I.clickSpan>Click!</I.clickSpan>
               </I.desc>
             </I.coninfo>
-          </I.detInfo>
-        </Link>
-        <Link to="/totalmanage" style={{ textDecoration: "none" }}>
-          <I.detInfo>
+          </Link>
+        </I.detInfo>
+        <I.detInfo bgImg={flash}>
+          <Link
+            to="/totalmanage"
+            style={{ textDecoration: "none", width: "100%", height: "100%" }}
+          >
             <I.coninfo>
               전력 사용 제어
               <br />
@@ -48,10 +57,13 @@ function Info() {
                 <I.clickSpan>Click!</I.clickSpan>
               </I.desc>
             </I.coninfo>
-          </I.detInfo>
-        </Link>
-        <Link to="/accdevelop" style={{ textDecoration: "none" }}>
-          <I.detInfo>
+          </Link>
+        </I.detInfo>
+        <I.detInfo bgImg={plug}>
+          <Link
+            to="/accdevelop"
+            style={{ textDecoration: "none", width: "100%", height: "100%" }}
+          >
             <I.coninfo>
               누적 발전량
               <br />
@@ -62,10 +74,13 @@ function Info() {
                 <I.clickSpan>Click!</I.clickSpan>
               </I.desc>
             </I.coninfo>
-          </I.detInfo>
-        </Link>
-        <Link to="/-" style={{ textDecoration: "none" }}>
-          <I.detInfo>
+          </Link>
+        </I.detInfo>
+        <I.detInfo>
+          <Link
+            to="/-"
+            style={{ textDecoration: "none", width: "100%", height: "100%" }}
+          >
             <I.coninfo>
               -
               <br />
@@ -76,8 +91,8 @@ function Info() {
                 <I.clickSpan>Click!</I.clickSpan>
               </I.desc>
             </I.coninfo>
-          </I.detInfo>
-        </Link>
+          </Link>
+        </I.detInfo>
       </I.infoDiv>
     </I.container>
   );

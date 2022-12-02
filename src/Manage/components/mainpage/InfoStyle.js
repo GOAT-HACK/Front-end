@@ -153,14 +153,21 @@ export const detInfo = styled.div`
   margin-left: 7rem;
   width: 400px;
   height: 200px;
-  background-color: #2e2e2e;
+  background: url(${(props) => props.bgImg});
+  background-size: 80%;
+  background-position: 40%;
+  background-repeat: no-repeat;
   border-radius: 0.5rem;
+  border: 3px solid #2e2e2e;
   overflow: hidden;
   z-index: 2;
   justify-content: center;
   align-items: center;
 
   &:hover {
+    transition-duration: 0.2s;
+    background-size: 100%;
+    background-position: 50%;
     ${coninfo} {
       transition-duration: 0.1s;
       opacity: 0.85;
