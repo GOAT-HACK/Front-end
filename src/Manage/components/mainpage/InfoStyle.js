@@ -81,12 +81,17 @@ export const baseInfo = styled.div`
   height: 500px;
   background-color: #2e2e2e;
   border-radius: 0.5rem;
+  border: 8px solid #87ff9d;
+  box-shadow: 0px 0px 40px #87ff9d;
   overflow: hidden;
   z-index: 2;
   justify-content: center;
   align-items: center;
 
   &:hover {
+    border: 8px solid #43bb6a;
+    box-shadow: none;
+    transition-duration: 0.5s;
     ${coninfo} {
       opacity: 0.85;
       animation: ${disappInfo} 0.0001 ease-out;
@@ -166,7 +171,7 @@ export const detInfo = styled.div`
 
   &:hover {
     transition-duration: 0.35s;
-    transition-timing-function: ease-in-out;
+    transition-timing-function: ease-out;
     background-size: 100%;
     background-position: 50%;
     ${coninfo} {

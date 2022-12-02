@@ -22,9 +22,9 @@ function UseElec() {
       </U.sideDiv>
       <U.energy>
         <U.simpleDesc>75%</U.simpleDesc>
-        <U.amountWave top={30} left={-100} duSec={4.8}></U.amountWave>
-        <U.amountWave top={29} left={-100} duSec={2.5}></U.amountWave>
-        <U.amountWave top={31} left={-100} duSec={6.3}></U.amountWave>
+        <U.amountWave top={30} left={-50} duSec={4.8}></U.amountWave>
+        <U.amountWave top={29} left={-50} duSec={2.5}></U.amountWave>
+        <U.amountWave top={31} left={-50} duSec={6.3}></U.amountWave>
       </U.energy>
       <U.sideDiv>
         <U.electronics
