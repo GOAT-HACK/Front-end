@@ -79,6 +79,8 @@ export const baseInfo = styled.div`
   z-index: 2;
   justify-content: center;
   align-items: center;
+  border: 8px solid #87ff9d;
+  box-shadow: 0px 0px 40px #87ff9d;
   &:hover {
     ${coninfo} {
       opacity: 0.85;
