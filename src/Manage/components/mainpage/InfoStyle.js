@@ -22,7 +22,7 @@ export const header = styled.div`
   top: 0%;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top right, #100722, #100722, #baadeb) left;
+  background: linear-gradient(to top right, #100722, #100722, #29BA5A) left;
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
