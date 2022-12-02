@@ -35,9 +35,23 @@
 
 .GO-AT-GOAT-button {
   display: flex;
-  background-color: black;
-  width: 200px;
-  height: 100px;
+  background-color: rgb(170, 161, 152);
+  width: 400px;
+  height: 200px;
   color: white;
   font-weight: 600;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+}
+
+.GO-AT-GOAT-button:hover {
+  background-color: rgb(191, 183, 175);
+}
+
+.GO-AT-GOAT-button:active {
+  transform: scale(0.98);
 }
