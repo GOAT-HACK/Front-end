@@ -19,3 +19,12 @@
     font-size: 5rem;
     font-family: 'Playfair Display', serif;
 }
+
+.page .contents .description {
+    margin-top: 50px;
+    width: 1000px;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 50px;
+    font-weight: 600;
+}
