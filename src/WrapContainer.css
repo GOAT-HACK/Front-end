@@ -1,0 +1,15 @@
+body {
+    background-color: #dcdcdc;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+/* WrapPage */
+#wrap-container {
+    height: 600vh;
+    overflow: hidden;
+    z-index: 1;
+}
