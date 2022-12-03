@@ -9,7 +9,7 @@ function AccDevelop() {
                 <A.LOGO src={GOAT}></A.LOGO>
             </A.header>
             <A.baseInfo>
-                <A.simpleDesc>73%</A.simpleDesc>
+                <A.simpleDesc>75%</A.simpleDesc>
                 {/* TOP: +5*/}
                 <A.amountWave top={30} left={-50} duSec={4.8}></A.amountWave>
                 <A.amountWave top={29} left={-50} duSec={2.5}></A.amountWave>
@@ -23,15 +23,15 @@ function AccDevelop() {
             <A.infoDiv>
                 <A.devAmount>
                     <A.title>일간발전량</A.title>
-                    <A.fig>2877kw</A.fig>
+                    <A.fig>27kw</A.fig>
                 </A.devAmount>
                 <A.devAmount>
                     <A.title>월간발전량</A.title>
-                    <A.fig>86301kW</A.fig>
+                    <A.fig>808kW</A.fig>
                 </A.devAmount>
                 <A.devAmount>
                     <A.title>연간발전량</A.title>
-                    <A.fig>1050000kW</A.fig>
+                    <A.fig>9,826kW</A.fig>
                 </A.devAmount>
             </A.infoDiv>
         </A.container>
