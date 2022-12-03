@@ -50,25 +50,25 @@ function TotalManage() {
             <T.infoDiv>
                 <T.detInfo>
                     <T.furnitImg src={airconditioner} />
-                    <T.onOffSwitch style={switches.s1 ? { backgroundColor: 'gray'} : {}} onClick={() => onClick(1)}>
+                    <T.onOffSwitch style={switches.s1 ? { backgroundColor: '#7fffbf'} : {}} onClick={() => onClick(1)}>
                         <T.switchBtn style={switches.s1 ? {marginLeft: '60px'} : {} }/>
                     </T.onOffSwitch>
                 </T.detInfo>
                 <T.detInfo>
                     <T.furnitImg src={desktop} />
-                    <T.onOffSwitch style={switches.s2 ? { backgroundColor: 'gray'} : {}} onClick={() => onClick(2)}>
+                    <T.onOffSwitch style={switches.s2 ? { backgroundColor: '#7fffbf'} : {}} onClick={() => onClick(2)}>
                         <T.switchBtn style={switches.s2 ? {marginLeft: '60px'} : {} }/>
                     </T.onOffSwitch>
                 </T.detInfo>
                 <T.detInfo>
                     <T.furnitImg src={refrigerator} />
-                    <T.onOffSwitch style={switches.s3 ? { backgroundColor: 'gray'} : {}} onClick={() => onClick(3)}>
+                    <T.onOffSwitch style={switches.s3 ? { backgroundColor: '#7fffbf'} : {}} onClick={() => onClick(3)}>
                         <T.switchBtn style={switches.s3 ? {marginLeft: '60px'} : {} }/>
                     </T.onOffSwitch>
                 </T.detInfo>
                 <T.detInfo>
                     <T.furnitImg src={fluorescentlight} />
-                    <T.onOffSwitch style={switches.s4 ? { backgroundColor: 'gray'} : {}} onClick={() => onClick(4)}>
+                    <T.onOffSwitch style={switches.s4 ? { backgroundColor: '#7fffbf'} : {}} onClick={() => onClick(4)}>
                         <T.switchBtn style={switches.s4 ? {marginLeft: '60px'} : {} }/>
                     </T.onOffSwitch>
                 </T.detInfo>
