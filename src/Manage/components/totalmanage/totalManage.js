@@ -36,7 +36,7 @@ function TotalManage() {
                 <T.LOGO src={GOAT}></T.LOGO>
             </T.header>
             <T.baseInfo>
-                <T.simpleDesc>73%</T.simpleDesc>
+                <T.simpleDesc>75%</T.simpleDesc>
                 {/* TOP: +5*/}
                 <T.amountWave top={30} left={-50} duSec={4.8}></T.amountWave>
                 <T.amountWave top={29} left={-50} duSec={2.5}></T.amountWave>
