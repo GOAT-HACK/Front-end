@@ -13,7 +13,7 @@ function Info() {
         <I.LOGO src={GOAT}></I.LOGO>
       </I.header>
       <I.baseInfo>
-        <I.simpleDesc>73%</I.simpleDesc>
+        <I.simpleDesc>75%</I.simpleDesc>
         {/* TOP: +5*/}
         <I.amountWave top={30} left={-50} duSec={4.8}></I.amountWave>
         <I.amountWave top={29} left={-50} duSec={2.5}></I.amountWave>

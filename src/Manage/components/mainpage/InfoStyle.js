@@ -102,7 +102,7 @@ export const baseInfo = styled.div`
 export const desc = styled.p`
   font-size: 1rem;
   text-align: center;
-  width: 71%;
+  width: 70%;
 `;
 
 const rotate = keyframes`
