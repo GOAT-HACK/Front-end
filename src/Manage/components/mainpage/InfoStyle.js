@@ -22,7 +22,7 @@ export const header = styled.div`
   top: 0%;
   width: 100%;
   height: 100px;
-  background: linear-gradient(to top right, #100722, #100722, #29BA5A) left;
+  background: linear-gradient(to top right, #100722, #100722, #29ba5a) left;
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
@@ -102,7 +102,7 @@ export const baseInfo = styled.div`
 export const desc = styled.p`
   font-size: 1rem;
   text-align: center;
-  width: 70%;
+  width: 71%;
 `;
 
 const rotate = keyframes`
